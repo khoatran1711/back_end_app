@@ -1,0 +1,60 @@
+D:\HK1\.Net API Web\bin\Debug\net6.0\appsettings.Development.json
+D:\HK1\.Net API Web\bin\Debug\net6.0\appsettings.json
+D:\HK1\.Net API Web\bin\Debug\net6.0\.Net API Web.exe
+D:\HK1\.Net API Web\bin\Debug\net6.0\.Net API Web.deps.json
+D:\HK1\.Net API Web\bin\Debug\net6.0\.Net API Web.runtimeconfig.json
+D:\HK1\.Net API Web\bin\Debug\net6.0\.Net API Web.dll
+D:\HK1\.Net API Web\bin\Debug\net6.0\.Net API Web.pdb
+D:\HK1\.Net API Web\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\HK1\.Net API Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\HK1\.Net API Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\HK1\.Net API Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\HK1\.Net API Web\obj\Debug\net6.0\.Net API Web.csproj.AssemblyReference.cache
+D:\HK1\.Net API Web\obj\Debug\net6.0\.Net API Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK1\.Net API Web\obj\Debug\net6.0\.Net API Web.AssemblyInfoInputs.cache
+D:\HK1\.Net API Web\obj\Debug\net6.0\.Net API Web.AssemblyInfo.cs
+D:\HK1\.Net API Web\obj\Debug\net6.0\.Net API Web.csproj.CoreCompileInputs.cache
+D:\HK1\.Net API Web\obj\Debug\net6.0\.Net API Web.MvcApplicationPartsAssemblyInfo.cs
+D:\HK1\.Net API Web\obj\Debug\net6.0\.Net API Web.MvcApplicationPartsAssemblyInfo.cache
+D:\HK1\.Net API Web\obj\Debug\net6.0\staticwebassets.build.json
+D:\HK1\.Net API Web\obj\Debug\net6.0\staticwebassets.development.json
+D:\HK1\.Net API Web\obj\Debug\net6.0\scopedcss\bundle\.Net API Web.styles.css
+D:\HK1\.Net API Web\obj\Debug\net6.0\.Net API Web.csproj.CopyComplete
+D:\HK1\.Net API Web\obj\Debug\net6.0\.Net API Web.dll
+D:\HK1\.Net API Web\obj\Debug\net6.0\refint\.Net API Web.dll
+D:\HK1\.Net API Web\obj\Debug\net6.0\.Net API Web.pdb
+D:\HK1\.Net API Web\obj\Debug\net6.0\.Net API Web.genruntimeconfig.cache
+D:\HK1\.Net API Web\obj\Debug\net6.0\ref\.Net API Web.dll
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\appsettings.Development.json
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\appsettings.json
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\.Net API Web.exe
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\.Net API Web.deps.json
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\.Net API Web.runtimeconfig.json
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\.Net API Web.dll
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\.Net API Web.pdb
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\.Net API Web.csproj.AssemblyReference.cache
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\.Net API Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\.Net API Web.AssemblyInfoInputs.cache
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\.Net API Web.AssemblyInfo.cs
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\.Net API Web.csproj.CoreCompileInputs.cache
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\.Net API Web.MvcApplicationPartsAssemblyInfo.cs
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\.Net API Web.MvcApplicationPartsAssemblyInfo.cache
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\staticwebassets.build.json
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\staticwebassets.development.json
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\scopedcss\bundle\.Net API Web.styles.css
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\.Net API Web.csproj.CopyComplete
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\.Net API Web.dll
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\refint\.Net API Web.dll
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\.Net API Web.pdb
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\.Net API Web.genruntimeconfig.cache
+D:\HK1\.Net_APO_Web\obj\Debug\net6.0\ref\.Net API Web.dll
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\Npgsql.dll
+D:\HK1\.Net_APO_Web\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
