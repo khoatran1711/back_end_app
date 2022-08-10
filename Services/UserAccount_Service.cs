@@ -27,7 +27,7 @@ public class UserAccountContext : DbContext
 
 
 public static class UserAccount_Services {
-    static List<UserAccount> List_of_account { get; }
+    static List<UserAccount> List_of_account = new List<UserAccount>();
     static UserAccount_Services()
     {     
     }
@@ -54,8 +54,10 @@ public static class UserAccount_Services {
     {
         if (data is null )
             return;
-        
+        data.user_account = data.user_account;
+        data.user_password = data.user_password;
         List_of_account.Add(data);
+     
 
         using (var db = new UserAccountContext())
         {
@@ -84,7 +86,7 @@ public static class UserAccount_Services {
         using (var db = new UserAccountContext())
         {
             db.MyDatas.Attach(data);
-            db.Entry(data).Property(x => x.user_account).IsModified = true;
+            db.Entry(data).Property(x => x.user_password).IsModified = true;
             db.SaveChanges();
         }
         return;

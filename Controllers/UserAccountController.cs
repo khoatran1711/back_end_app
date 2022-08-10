@@ -40,14 +40,11 @@ public class UserAccountController : ControllerBase
         return data;
     }
     [HttpPost]
-    public IActionResult Create( string useraccount,string userpassword)
+    public IActionResult Create( UserAccount data)
     {         
-        UserAccount data = new UserAccount(useraccount,userpassword)   ;
-        data.user_account= useraccount;
-        data.user_password=userpassword;
+       
         UserAccount_Services.Add(data);
-        Console.WriteLine(data.user_account);
-        return CreatedAtAction(nameof(Create), new { useraccount = data.user_account }, data);
+        return CreatedAtAction(nameof(Create), new { user_account = data.user_account }, data);
     }
 
     [HttpPut("{account}")]

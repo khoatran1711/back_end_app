@@ -29,7 +29,7 @@ public class MyDataController : ControllerBase
         .ToArray();
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("getbyID/{id}")]
     public ActionResult<MyData> Get(int id)
     {
         var data = MyData_Services.Get(id);

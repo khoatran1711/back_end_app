@@ -1,15 +1,11 @@
 namespace _Net_API_Web.Models;
 
 public class Product{
-    public string? ID_Product {get;set;}
-    public string? Name_Product {get;set;}
-
-    public int Price_Product {get;set;}
-
-    public string? Description_Product {get; set;}
-
-    public string? Status_Product {get;set;}
-
-    public string? Imagedata {get;set;} 
+    public string? id_product {get;set;}
+    public string? name_product {get;set;}
+    public int price_product {get;set;}
+    public string? description_product {get; set;}
+    public string? category_product {get;set;}
+    public string? imagedata {get;set;} 
 
 }
