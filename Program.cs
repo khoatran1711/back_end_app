@@ -1,6 +1,9 @@
 
 
-var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+using System.Net;
+
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 
 
 
@@ -11,12 +14,14 @@ builder.Services.AddCors(options =>
 {
 
     options.AddPolicy(name: MyAllowSpecificOrigins,
-                      policy  =>
+                      policy =>
                       {
                           policy.WithOrigins("http://localhost:19006/",
                                               "https://localhost:7116/mydata");
                       });
 });
+
+
 
 
 
@@ -45,7 +50,7 @@ app.MapControllers();
 app.UseCors(builder => builder
      .AllowAnyOrigin()
      .AllowAnyMethod()
-     .AllowAnyHeader());   
+     .AllowAnyHeader());
 
 app.Run();
 

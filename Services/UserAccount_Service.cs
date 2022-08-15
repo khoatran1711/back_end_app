@@ -11,14 +11,14 @@ public class UserAccountContext : DbContext
 {
     public DbSet<UserAccount> MyDatas { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
-{
-    modelBuilder
-        .Entity<UserAccount>(builder =>
     {
-        builder.HasKey(x => x.user_account);
-        builder.ToTable("useraccount");
-    });
-}
+        modelBuilder
+            .Entity<UserAccount>(builder =>
+        {
+            builder.HasKey(x => x.Account);
+            builder.ToTable("useraccount");
+        });
+    }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseNpgsql(@"Host=localhost; Database=test_data; Username=postgres; Password=khoa123");
@@ -26,38 +26,41 @@ public class UserAccountContext : DbContext
 
 
 
-public static class UserAccount_Services {
+public static class UserAccount_Services
+{
     static List<UserAccount> List_of_account = new List<UserAccount>();
     static UserAccount_Services()
-    {     
+    {
     }
 
     //public static List<MyData> GetList(){
-        //var context = new BlogContext();
-       // var fBlogs = context.MyDatas.ToList();
-      //  return fBlogs;
-   // }
-  
-    public static List<UserAccount> GetAll() {
+    //var context = new BlogContext();
+    // var fBlogs = context.MyDatas.ToList();
+    //  return fBlogs;
+    // }
+
+    public static List<UserAccount> GetAll()
+    {
         var context = new UserAccountContext();
         var fBlogs = context.MyDatas.ToList();
         return fBlogs;
     }
 
-    public static UserAccount? Get(string account) {
+    public static UserAccount? Get(string account)
+    {
         var context = new UserAccountContext();
         var blog = context.MyDatas
-        .Single(b => b.user_account == account);
+        .Single(b => b.Account == account);
         return blog;
     }
     public static void Add(UserAccount data)
     {
-        if (data is null )
+        if (data is null)
             return;
-        data.user_account = data.user_account;
-        data.user_password = data.user_password;
+        data.Account = data.Account;
+        data.Password = data.Password;
         List_of_account.Add(data);
-     
+
 
         using (var db = new UserAccountContext())
         {
@@ -69,7 +72,7 @@ public static class UserAccount_Services {
     public static void Delete(string account)
     {
         var data = Get(account);
-        if(data is null)
+        if (data is null)
             return;
         using (var db = new UserAccountContext())
         {
@@ -79,14 +82,14 @@ public static class UserAccount_Services {
         }
     }
     public static void Update(UserAccount data)
-    {   
+    {
         var my_data = data;
         if (data is null)
             return;
         using (var db = new UserAccountContext())
         {
             db.MyDatas.Attach(data);
-            db.Entry(data).Property(x => x.user_password).IsModified = true;
+            db.Entry(data).Property(x => x.Password).IsModified = true;
             db.SaveChanges();
         }
         return;

@@ -11,14 +11,14 @@ public class UserInfoContext : DbContext
 {
     public DbSet<User> Users { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
-{
-    modelBuilder
-        .Entity<User>(builder =>
     {
-        builder.HasKey(x => x.user_account);
-        builder.ToTable("userinfo");
-    });
-}
+        modelBuilder
+            .Entity<User>(builder =>
+        {
+            builder.HasKey(x => x.UserAccount);
+            builder.ToTable("userinfo");
+        });
+    }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseNpgsql(@"Host=localhost; Database=test_data; Username=postgres; Password=khoa123");
@@ -27,28 +27,31 @@ public class UserInfoContext : DbContext
 
 
 
-public static class UserInfo_Services {
+public static class UserInfo_Services
+{
     static List<User> List_of_user = new List<User>();
     static UserInfo_Services()
-    {     
+    {
     }
 
     //public static List<MyData> GetList(){
-        //var context = new BlogContext();
-       // var fBlogs = context.MyDatas.ToList();
-      //  return fBlogs;
-   // }
-  
-    public static List<User> GetAll() {
+    //var context = new BlogContext();
+    // var fBlogs = context.MyDatas.ToList();
+    //  return fBlogs;
+    // }
+
+    public static List<User> GetAll()
+    {
         var context = new UserInfoContext();
         var fBlogs = context.Users.ToList();
         return fBlogs;
     }
 
-    public static User? Get(string user_account) {
+    public static User? Get(string userAccount)
+    {
         var context = new UserInfoContext();
         var blog = context.Users
-        .Single(b => b.user_account == user_account);
+        .Single(b => b.UserAccount == userAccount);
         return blog;
     }
 
@@ -60,20 +63,18 @@ public static class UserInfo_Services {
     // }
 
 
-   
+
     public static void Add(User data)
     {
-        if (data is null )
+        if (data is null)
             return;
-        data.user_account = data.user_account;
-        data.user_name = data.user_name;
-        data.user_mail = data.user_mail;
-        data.user_phone = data.user_phone;
-
-
+        data.UserAccount = data.UserAccount;
+        data.UserName = data.UserName;
+        data.UserMail = data.UserMail;
+        data.UserPhone = data.UserPhone;
 
         List_of_user.Add(data);
-     
+
 
         using (var db = new UserInfoContext())
         {
@@ -82,10 +83,10 @@ public static class UserInfo_Services {
             db.SaveChanges();
         }
     }
-    public static void Delete(string user_account)
+    public static void Delete(string userAccount)
     {
-        var data = Get(user_account);
-        if(data is null)
+        var data = Get(userAccount);
+        if (data is null)
             return;
         using (var db = new UserInfoContext())
         {
@@ -95,16 +96,16 @@ public static class UserInfo_Services {
         }
     }
     public static void Update(User data)
-    {   
+    {
         var my_data = data;
         if (data is null)
             return;
         using (var db = new UserInfoContext())
         {
             db.Users.Attach(data);
-            db.Entry(data).Property(x => x.user_name).IsModified = true;
-            db.Entry(data).Property(x => x.user_phone).IsModified = true;
-            db.Entry(data).Property(x => x.user_mail).IsModified = true;
+            db.Entry(data).Property(x => x.UserName).IsModified = true;
+            db.Entry(data).Property(x => x.UserPhone).IsModified = true;
+            db.Entry(data).Property(x => x.UserMail).IsModified = true;
             db.SaveChanges();
         }
         return;

@@ -35,28 +35,28 @@ public class UserController : ControllerBase
     {
         var data = UserInfo_Services.Get(user_account);
 
-        if(data == null)
+        if (data == null)
             return NotFound();
         return data;
     }
 
 
     [HttpPost]
-    public IActionResult Create( User data)
-    {         
+    public IActionResult Create(User data)
+    {
         UserInfo_Services.Add(data);
-        return CreatedAtAction(nameof(Create), new { user_account = data.user_account }, data);
+        return CreatedAtAction(nameof(Create), new { user_account = data.UserAccount }, data);
     }
 
     [HttpPut("{user_account}")]
     public IActionResult Update(string user_account, User data)
     {
-        if (user_account != data.user_account)
+        if (user_account != data.UserAccount)
             return BadRequest();
         var existingPizza = UserInfo_Services.Get(user_account);
-        if(existingPizza is null)
+        if (existingPizza is null)
             return NotFound();
-        UserInfo_Services.Update(data);           
+        UserInfo_Services.Update(data);
         return NoContent();
     }
 
@@ -65,7 +65,7 @@ public class UserController : ControllerBase
     {
         var data = UserInfo_Services.Get(user_account);
         if (data is null)
-            return NotFound();      
+            return NotFound();
         UserInfo_Services.Delete(user_account);
         return NoContent();
     }

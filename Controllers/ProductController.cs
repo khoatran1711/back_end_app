@@ -30,51 +30,51 @@ public class ProductController : ControllerBase
         .ToArray();
     }
 
-    [HttpGet("{id_product}")]
-    public ActionResult<Product> Get(string id_product)
+    [HttpGet("{idProduct}")]
+    public ActionResult<Product> Get(string idProduct)
     {
-        var data = Product_Services.Get(id_product);
+        var data = Product_Services.Get(idProduct);
 
-        if(data == null)
+        if (data == null)
             return NotFound();
         return data;
     }
 
-    [HttpGet("getbycate/{cate_name}")]
-    public IEnumerable<Product> GetbyCategory(string cate_name)
+    [HttpGet("getbycate/{cateName}")]
+    public IEnumerable<Product> GetbyCategory(string cateName)
     {
-        var data = Product_Services.GetbyCategory(cate_name);
+        var data = Product_Services.GetbyCategory(cateName);
 
         return data;
     }
 
 
     [HttpPost]
-    public IActionResult Create( Product data)
-    {         
+    public IActionResult Create(Product data)
+    {
         Product_Services.Add(data);
-        return CreatedAtAction(nameof(Create), new { id_product = data.id_product }, data);
+        return CreatedAtAction(nameof(Create), new { id_product = data.IdProduct }, data);
     }
 
-    [HttpPut("{id_product}")]
-    public IActionResult Update(string id_product, Product data)
+    [HttpPut("{idProduct}")]
+    public IActionResult Update(string idProduct, Product data)
     {
-        if (id_product != data.id_product)
+        if (idProduct != data.IdProduct)
             return BadRequest();
-        var existingPizza = Product_Services.Get(id_product);
-        if(existingPizza is null)
+        var existingPizza = Product_Services.Get(idProduct);
+        if (existingPizza is null)
             return NotFound();
-        Product_Services.Update(data);           
+        Product_Services.Update(data);
         return NoContent();
     }
 
-    [HttpDelete("{id_product}")]
-    public IActionResult Delete(string id_product)
+    [HttpDelete("{idProduct}")]
+    public IActionResult Delete(string idProduct)
     {
-        var data = Product_Services.Get(id_product);
+        var data = Product_Services.Get(idProduct);
         if (data is null)
-            return NotFound();      
-        Product_Services.Delete(id_product);
+            return NotFound();
+        Product_Services.Delete(idProduct);
         return NoContent();
     }
 }

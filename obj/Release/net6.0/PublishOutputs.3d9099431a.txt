@@ -1,0 +1,17 @@
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\.Net API Web.exe
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\.Net API Web.dll
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\.Net API Web.deps.json
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\.Net API Web.runtimeconfig.json
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\.Net API Web.pdb
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Caching.Memory.dll
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\Npgsql.dll
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\HK1\.Net_APO_Web\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
